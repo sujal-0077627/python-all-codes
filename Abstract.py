@@ -1,0 +1,20 @@
+from abc import ABC, abstractmethod
+
+class A(ABC):
+    def xyz(self):
+        print("hello xyz")
+
+    @abstractmethod
+    def show(self):
+        print("hi show")
+
+
+class B(A):
+    pass
+
+    def show(self):
+        print("hi im show from B")
+
+
+obj = B()
+obj.xyz()
