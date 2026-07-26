@@ -1,7 +1,6 @@
 from p1 import p1
 from p2 import p2
 
-
 class c(p1, p2):
     def pqr(self):
         print("im from child pqr")

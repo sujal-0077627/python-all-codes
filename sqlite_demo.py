@@ -16,9 +16,9 @@ conn.commit()
 
 # Insert
 cursor.execute("INSERT INTO students (name, age, course) VALUES (?, ?, ?)",
-               ("Rahul", 21, "C++"))
+               ("Ram", 21))
 cursor.execute("INSERT INTO students (name, age, course) VALUES (?, ?, ?)",
-               ("Anjali", 24, "JavaScript"))
+               ("Sita", 24))
 conn.commit()
 
 cursor.execute("SELECT id, name, age FROM students")
@@ -28,11 +28,11 @@ for row in rows:
     print(row)
 
 # 4. Update
-cursor.execute("UPDATE students SET age = ? WHERE name = ?", (25, "Rahul"))
+cursor.execute("UPDATE students SET age = ? WHERE name = ?", (25, "Ram"))
 conn.commit()
 
 # Delete
-cursor.execute("DELETE FROM students WHERE name = ?", ("Anjali",))
+cursor.execute("DELETE FROM students WHERE name = ?", ("Sita",))
 conn.commit()
 
 cursor.execute("SELECT id, name, age FROM students")

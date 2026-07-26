@@ -1,0 +1,5 @@
+1) database connection
+2) blueprint related tables
+3) CRUD operation
+4) panel creation .py
+5) main .py --> login check (role) --> panel
